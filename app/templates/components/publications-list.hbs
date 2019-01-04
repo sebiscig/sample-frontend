@@ -1,0 +1,46 @@
+{{yield}}
+<div class="w3-container w3-padding-0" style="margin-left: -1em;">
+{{#each groupedPublications as |publicationGroup|}}
+  <div class="w3-container w3-medium" style="margin-left: -1em;"><h6><em>{{publicationGroup.value}}</em></h6></div>
+    {{#each publicationGroup.items as |publication index|}}
+        {{#if (logical-tests test="===" value=index comparison=0 )}}
+          {{#if (logical-tests test="===" value=showAbstract comparison="yes")}}
+            {{#if (logical-tests test="!=" value=publication.abstract comparison='')}}
+              <div class="w3-container">{{publication.authors}}. ({{publication.date}}). {{markdown-to-html extensions='noP' markdown=publication.citation}}.<span class="w3-text-blue w3-hover-text-blue w3-btn w3-white w3-padding-tiny" style="margin-left: -4px;" {{action "showModal" index}}>ABSTRACT</span></div>
+              <div id="modal-{{index}}" class="w3-modal">
+        		    <div class="w3-modal-content">
+        		        <div class="w3-container">
+        		 	          <span {{action "hideModal" index}} class="w3-closebtn">&times;</span>
+        		 	            {{markdown-to-html publication.abstract}}
+        		        </div>
+        	      </div>
+        	    </div>
+            {{else}}
+              <div class="w3-container">{{publication.authors}}. ({{publication.date}}). {{markdown-to-html extensions='noP' markdown=publication.citation}}.</div>
+            {{/if}}
+          {{else}}
+            <div class="w3-container">{{publication.authors}}. ({{publication.date}}). {{markdown-to-html extensions='noP' markdown=publication.citation}}.</div>
+          {{/if}}
+        {{else}}
+          {{#if (logical-tests test="===" value=showAbstract comparison="yes")}}
+            {{#if (logical-tests test="!=" value=publication.abstract comparison='')}}
+              <div class="w3-container publication">{{publication.authors}}. ({{publication.date}}). {{markdown-to-html extensions='noP' markdown=publication.citation}}.<span class="w3-text-blue w3-hover-text-blue w3-btn w3-white w3-padding-tiny" {{action "showModal" index}}>ABSTRACT</span></div>
+              <div id="modal-{{index}}" class="w3-modal">
+        		    <div class="w3-modal-content">
+        		        <div class="w3-container">
+        		 	          <span {{action "hideModal" index}} class="w3-closebtn">&times;</span>
+        		 	            {{markdown-to-html publication.abstract}}
+        		        </div>
+        	      </div>
+        	    </div>
+            {{else}}
+              <div class="w3-container publication">{{publication.authors}}. ({{publication.date}}). {{markdown-to-html extensions='noP' markdown=publication.citation}}.</div>
+            {{/if}}
+          {{else}}
+            <div class="w3-container publication">{{publication.authors}}. ({{publication.date}}). {{markdown-to-html extensions='noP' markdown=publication.citation}}.</div>
+          {{/if}}
+        {{/if}}
+    {{/each}}
+
+{{/each}}
+</div>

@@ -1,0 +1,22 @@
+<h2>{{model.content.heading}}</h2>
+<div class="w3-container">
+	{{markdown-to-html model.content.blurb}}
+	<div class="w3-container">
+		<div class="w3-container w3-medium" style="margin-left: -1em;"><h6 style="text-align: center; font-size: 110%"><em>Mailing Address</em></h6></div>
+		<div class="w3-container w3-padding-0" style="margin-left: -1em;">
+			<div class="w3-container" style="text-align: center; font-size: 110%">
+				{{model.contact.name}}<br />
+				{{model.contact.title}}<br />
+				{{model.contact.unit}}<br />
+				{{model.contact.institution}}<br />
+				{{model.contact.street}}<br />
+				{{model.contact.city}}, {{model.contact.state}} {{model.contact.zip}}<br />
+
+			</div>
+		</div>
+		<div class="w3-container w3-medium" style="margin-left: -1em; margin-top: 1em;">
+		<h6 style="text-align: center; font-size: 110%"><em>E-Mail</em>: <span class="w3-text-blue" style="text-decoration: underline; font-size: 110%">{{spam-span 	model.contact.email}}</span></h6>
+		<h6 style="text-align: center; font-size: 110%"><em>Telephone</em>: {{model.contact.phone}}</h6>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+<h2>{{model.content.heading}}</h2>
+{{markdown-to-html model.content.blurb}}
+<div class="w3-container">
+
+    {{#publications-list publications=model.publications showAbstract="yes"}}
+    {{/publications-list}}
+
+</div>

@@ -1,0 +1,147 @@
+#header h1 {
+	font-family: "Avenir";
+	text-align: center;
+}
+#header p {
+	margin-top: -0.5em;
+	font-family: "Avenir";
+	text-align: center;
+	overflow:scroll;
+}
+
+#header a {
+  text-decoration: none !important;
+}
+
+#content a, a:hover {
+	color:#2196F3;
+	text-dectoration: none;
+
+}
+
+#header h5 {
+	font-family: "Avenir";
+	text-align: center;
+}
+
+#IU * {
+
+	text-align: center;
+	font-size: 106%;
+}
+#IU {
+	 margin-top:-1em;
+
+}
+
+#header div {
+	font-family: "Avenir";
+	text-align: center;
+}
+
+#footer {
+	margin-top: 1em;
+	font-family: Baskerville;
+}
+
+#navBar {
+	 margin-top: 2em;
+}
+
+#content * {
+	font-family: "Baskerville";
+	text-align: left;
+}
+
+#content h1, h2, h3, h4, h5 {
+	font-family:"Avenir" !important;
+}
+
+
+
+#content p {
+	font-size: 110%;
+}
+
+.modalDiv {
+	font-size: 110%;
+}
+
+#content .small {
+	font-size: 95%;
+}
+
+#content a {
+	text-decoration: none;
+}
+
+#cvContact a {
+	text-decoration: underline !important;
+}
+
+h5.cvSection {
+	font-family: "Avenir" !important;
+	text-align: left;
+}
+.cvSectionContent {
+	border-top: solid black 0.25px;
+	margin-top: -1em;
+}
+.cvEntry {
+	margin-top: -10px;
+}
+.hangingIndent {
+	padding-left: 1em !important;
+	text-indent: -1em;
+}
+
+.publication {
+	margin-top: 1em;
+}
+
+.docType {
+	margin-left: 22px;
+	float: left;
+	margin-top: -15px;
+}
+
+.indent {
+	margin-top: -10px;
+	margin-left: -1em;
+}
+
+.headshot {
+	width: 180px !important;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.tori {
+	width: 150px !important;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.DT-theme-l5 {color:#000 !important; background-color:#e9f5ff !important}
+.DT-theme-l4 {color:#000 !important; background-color:#b5dffd !important}
+.DT-theme-l3 {color:#000 !important; background-color:#6bc0fc !important}
+.DT-theme-l2 {color:#fff !important; background-color:#21a0fa !important}
+.DT-theme-l1 {color:#fff !important; background-color:#0479cc !important}
+.DT-theme-d1 {color:#fff !important; background-color:#024575 !important}
+.DT-theme-d2 {color:#fff !important; background-color:#023e68 !important}
+.DT-theme-d3 {color:#fff !important; background-color:#02365b !important}
+.DT-theme-d4 {color:#fff !important; background-color:#022e4e !important}
+.DT-theme-d5 {color:#fff !important; background-color:#012641 !important}
+
+.DT-hover-text:hover {color:#0479cc !important}
+.DT-text {color:#0479cc !important}
+
+
+.DT-theme-light {color:#000 !important; background-color:#e9f5ff !important}
+.DT-theme-dark {color:#fff !important; background-color:#012641 !important}
+.DT-theme-action {color:#fff !important; background-color:#012641 !important}
+
+.DT-theme {color:#fff !important; background-color:#034f84 !important}
+.DT-text-theme {color:#034f84 !important}
+.DT-theme-border {border-color:#034f84 !important}
+.DT-hover-theme:hover {color:#fff !important; background-color:#034f84 !important}

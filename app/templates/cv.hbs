@@ -1,0 +1,7 @@
+<h2>{{model.content.heading}}</h2>
+{{markdown-to-html model.content.blurb}}
+<div class="w3-container w3-padding-0"><h5 class="cvSection">PUBLICATIONS</h5></div>
+<div class="w3-container cvSectionContent">
+  {{#publications-list publications=model.publications}}
+  {{/publications-list}}
+</div>

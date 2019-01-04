@@ -1,0 +1,46 @@
+<div id="header"class="w3-container">
+
+			<img src="https://www.changepoint.com/wp-content/uploads/2017/03/tetris-hero-banner-1950x500-01.png" alt="Tetris Hero" style="width: 100%;">
+
+			{{#link-to "index"}}<h1 class="w3-hover-text-blue w3-xxxlarge" style="text-decoration: none;">Default User</h1>{{/link-to}}
+
+			<h5>Needs a title and appointment</h5>
+			<div id="IU" class="w3-row">
+				<a class="w3-hover-white s12 w3-text-blue w3-hover-text-blue" href="https://google.com/" target="_blank">
+					<div class="w3-col w3-container">An institutional affiliation?</div>
+				</a>
+			</div>
+			<div id="navBar" class="w3-row  w3-border-bottom w3-padding-bottom">
+
+				{{#link-to "Bio"}}
+					<div class="w3-large w3-hover-text-blue w3-col w3-container s12 m3 l3">Bio</div>
+				{{/link-to}}
+
+				{{#link-to "Research"}}
+					<div class="w3-large w3-hover-text-blue w3-col w3-container s12 m3 l3">Research</div>
+				{{/link-to}}
+
+				{{#link-to "Teaching"}}
+					<div class="w3-large w3-hover-text-blue w3-col w3-container s12 m3 l3">Teaching</div>
+				{{/link-to}}
+
+				{{#link-to "CV"}}
+					<div class="w3-large w3-hover-text-blue w3-col w3-container s12 m3 l3">CV</div>
+				{{/link-to}}
+
+			</div>
+</div>
+
+<div id="content" class="w3-container" style="margin-top: 1em; margin-bottom: 2em">
+
+	{{outlet}}
+
+</div>
+
+<div id="footer" class="w3-container w3-border-top">
+	<div id="contact" class="w3-container w3-left w3-small w3-padding-tiny">
+			<span class="w3-hover-text-blue">{{spam-span 'anEmail@address.com'}}</span>
+	</div>
+	<div id="copyright" class="w3-container w3-rest w3-small w3-right w3-padding-tiny">&copy; {{get-date 'year'}} | Default User</div>
+		<div style="height: 3em;"></div>
+</div>
